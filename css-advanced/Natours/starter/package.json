@@ -1,0 +1,20 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-local-server": "parcel -p 3030 watch index.html",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev": "npm run compile:sass | npm run start-local-server"
+  },
+  "keywords": [],
+  "author": "Cody Rathor <codyrathor@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
