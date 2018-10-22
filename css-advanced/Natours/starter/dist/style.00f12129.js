@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -133,7 +133,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -164,12 +164,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"css/style.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"css/style.css":[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../img/nat-5-small.jpg":[["nat-5-small.92f41395.jpg","img/nat-5-small.jpg"],"img/nat-5-small.jpg"],"./../img/nat-5.jpg":[["nat-5.e36afb7e.jpg","img/nat-5.jpg"],"img/nat-5.jpg"],"./../img/nat-6-small.jpg":[["nat-6-small.13ba1162.jpg","img/nat-6-small.jpg"],"img/nat-6-small.jpg"],"./../img/nat-6.jpg":[["nat-6.f6311280.jpg","img/nat-6.jpg"],"img/nat-6.jpg"],"./../img/nat-7-small.jpg":[["nat-7-small.784029a0.jpg","img/nat-7-small.jpg"],"img/nat-7-small.jpg"],"./../img/nat-7.jpg":[["nat-7.ae5c2c8d.jpg","img/nat-7.jpg"],"img/nat-7.jpg"],"./../img/hero-small.jpg":[["hero-small.b01f7bd1.jpg","img/hero-small.jpg"],"img/hero-small.jpg"],"./../img/hero.jpg":[["hero.40b39c47.jpg","img/hero.jpg"],"img/hero.jpg"],"./../img/nat-4-small.jpg":[["nat-4-small.1b84c936.jpg","img/nat-4-small.jpg"],"img/nat-4-small.jpg"],"./../img/nat-4.jpg":[["nat-4.934d1efc.jpg","img/nat-4.jpg"],"img/nat-4.jpg"],"./../img/nat-10-small.jpg":[["nat-10-small.4c19245a.jpg","img/nat-10-small.jpg"],"img/nat-10-small.jpg"],"./../img/nat-10.jpg":[["nat-10.2e87b141.jpg","img/nat-10.jpg"],"img/nat-10.jpg"],"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../img/nat-5-small.jpg":[["nat-5-small.92f41395.jpg","img/nat-5-small.jpg"],"img/nat-5-small.jpg"],"./../img/nat-5.jpg":[["nat-5.e36afb7e.jpg","img/nat-5.jpg"],"img/nat-5.jpg"],"./../img/nat-6-small.jpg":[["nat-6-small.13ba1162.jpg","img/nat-6-small.jpg"],"img/nat-6-small.jpg"],"./../img/nat-6.jpg":[["nat-6.f6311280.jpg","img/nat-6.jpg"],"img/nat-6.jpg"],"./../img/nat-7-small.jpg":[["nat-7-small.784029a0.jpg","img/nat-7-small.jpg"],"img/nat-7-small.jpg"],"./../img/nat-7.jpg":[["nat-7.ae5c2c8d.jpg","img/nat-7.jpg"],"img/nat-7.jpg"],"./../img/hero-small.jpg":[["hero-small.b01f7bd1.jpg","img/hero-small.jpg"],"img/hero-small.jpg"],"./../img/hero.jpg":[["hero.40b39c47.jpg","img/hero.jpg"],"img/hero.jpg"],"./../img/nat-4-small.jpg":[["nat-4-small.1b84c936.jpg","img/nat-4-small.jpg"],"img/nat-4-small.jpg"],"./../img/nat-4.jpg":[["nat-4.934d1efc.jpg","img/nat-4.jpg"],"img/nat-4.jpg"],"./../img/nat-10-small.jpg":[["nat-10-small.4c19245a.jpg","img/nat-10-small.jpg"],"img/nat-10-small.jpg"],"./../img/nat-10.jpg":[["nat-10.2e87b141.jpg","img/nat-10.jpg"],"img/nat-10.jpg"],"_css_loader":"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50706' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55860' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -133,7 +133,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -164,12 +164,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"css/icon-font.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"css/icon-font.css":[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts/linea-basic-10.eot":[["linea-basic-10.b7a574ef.eot","css/fonts/linea-basic-10.eot"],"css/fonts/linea-basic-10.eot"],"./fonts/linea-basic-10.woff":[["linea-basic-10.2f861992.woff","css/fonts/linea-basic-10.woff"],"css/fonts/linea-basic-10.woff"],"./fonts/linea-basic-10.ttf":[["linea-basic-10.caf9c257.ttf","css/fonts/linea-basic-10.ttf"],"css/fonts/linea-basic-10.ttf"],"./fonts/linea-basic-10.svg":[["linea-basic-10.c5267984.svg","css/fonts/linea-basic-10.svg"],"css/fonts/linea-basic-10.svg"],"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts/linea-basic-10.eot":[["linea-basic-10.b7a574ef.eot","css/fonts/linea-basic-10.eot"],"css/fonts/linea-basic-10.eot"],"./fonts/linea-basic-10.woff":[["linea-basic-10.2f861992.woff","css/fonts/linea-basic-10.woff"],"css/fonts/linea-basic-10.woff"],"./fonts/linea-basic-10.ttf":[["linea-basic-10.caf9c257.ttf","css/fonts/linea-basic-10.ttf"],"css/fonts/linea-basic-10.ttf"],"./fonts/linea-basic-10.svg":[["linea-basic-10.c5267984.svg","css/fonts/linea-basic-10.svg"],"css/fonts/linea-basic-10.svg"],"_css_loader":"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/css-loader.js"}],"../../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50706' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55860' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
