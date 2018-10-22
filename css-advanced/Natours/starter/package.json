@@ -4,17 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-local-server": "parcel -p 3030 watch index.html",
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "dev": "npm run compile:sass | npm run start-local-server"
-  },
+    "devserver": "parcel -p 3030 watch index.html",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    },
   "keywords": [],
   "author": "Cody Rathor <codyrathor@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^4.1.5",
     "node-sass": "^4.9.4"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "autoprefixer": "^9.2.1",
+    "concat": "^1.0.3",
+    "jquery": "^3.3.1",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.1"
   }
 }
