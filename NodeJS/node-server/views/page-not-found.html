@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Page Not Found</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+      body {
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      .main-header {
+        width: 100%;
+        height: 3.5rem;
+        background-color: royalblue;
+      }
+      .main-header__nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+      }
+      .main-header__list {
+        list-style: none;
+        display: flex;
+      }
+      .main-header__item {
+        padding: 8px;
+      }
+      .main-header__item a {
+        color: #f4f4f4;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .main-header__item a:hover,
+      .main-header__item a:link:hover,
+      .main-header__item a:visited:hover,
+      .main-header__item a:active,
+      .main-header__item a:link:active,
+      .main-header__item a:visited:active,
+      .main-header__item a.active,
+      .main-header__item a:link.active,
+      .main-header__item a:visited.active {
+        color: rgb(188, 128, 0);
+      }
+
+      .page-not-found {
+        text-align: center;
+        color: royalblue;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <li class="main-header__item"><a class="active" href="/">Shop</a></li>
+          <li class="main-header__item">
+            <a href="/admin/add-product">Add Product</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="page-not-found">Page Not Found!</h1>
+  </body>
+</html>
