@@ -11,6 +11,7 @@ body {
   width: 100%;
   height: 3.5rem;
   background-color: royalblue;
+  box-shadow: 0 3px 5px black;
 }
 .main-header__nav {
   height: 100%;
@@ -41,4 +42,75 @@ body {
 .main-header__item a:link.active,
 .main-header__item a:visited.active {
   color: rgb(188, 128, 0);
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.card {
+  width: 30%;
+  background-color: royalblue;
+  text-align: center;
+  color: whitesmoke;
+  box-shadow: 0 5px 20px black;
+}
+.card:not(:last-child) {
+  margin-right: 10px;
+}
+.card__header {
+  padding: 10px;
+}
+.card__image {
+}
+.card__image img {
+  width: 100%;
+  height: auto;
+}
+.card__content {
+  padding: 10px;
+}
+.card__actions {
+  padding: 10px;
+}
+.product__title {
+}
+.product__price {
+  padding: 8px;
+}
+.product__description {
+}
+
+.btn {
+  display: block;
+  border: none;
+  padding: 14px 18px;
+  background-color: rgb(188, 128, 0);
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px black;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 10px black;
+}
+
+.no-products {
+  text-align: center;
+  color: royalblue;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 16px;
 }
