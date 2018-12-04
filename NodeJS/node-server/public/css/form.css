@@ -8,11 +8,11 @@
 }
 .form-group {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 15px;
 }
 .form-label {
+  flex: 0 0 20%;
   font-weight: bold;
   margin-right: 8px;
 }
