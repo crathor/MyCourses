@@ -1,0 +1,25 @@
+.user-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: aquamarine;
+  min-height: 50vh;
+  box-shadow: inset 1px 1px 3px black, inset -1px -1px 3px black;
+  padding: 1rem;
+}
+.user-container__list {
+  width: 60%;
+  margin: 1rem auto;
+  list-style: none;
+}
+.user-container__item {
+  padding: 10px 12px;
+  background-color: navy;
+  font-size: 24px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  box-shadow: 0 3px 5px black;
+}
+.user-container__item:not(:first-child) {
+  margin-top: 10px;
+}
